@@ -208,7 +208,7 @@ li {
         top: 0;
         left: 0;
         width: 330px;
-        transform: translate(-18%, 50%);
+        transform: translate(-18%, 35%);
     }
 
     .illustration-box {
@@ -216,7 +216,7 @@ li {
         width: 150px;
         top: 0;
         left: 0;
-        transform: translate(-55%, 150%);
+        transform: translate(-55%, 130%);
         overflow: none;
     }
 
