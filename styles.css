@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+ul {
+    
+}
+
+li {
+    list-style: none;
+}
+
+.accordion-item {
+
+}
+
+.accordion-item-title-container {
+    display: flex;
+}
+
+.accordion-toggle-button {
+    height: 10px;
+    width: 10px;
+    background-color: red;
+}
+
+.accordion-item-title {
+
+}
+
+.accordion-item-description {
+    display: none;
+}
+
+.accordion-item-description.opened {
+    display: block;
+}
