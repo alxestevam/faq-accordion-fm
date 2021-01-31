@@ -21,17 +21,27 @@ function createAccordionItem(title, description) {
     itemTitle.classList.add('accordion-item-title')
     itemTitleContainer.appendChild(itemTitle)
 
-    const toggleButton = document.createElement('button')
+    const toggleButtonContainer = document.createElement('div')
+    toggleButtonContainer.classList.add('accordion-toggle-button-container')
+    itemTitleContainer.appendChild(toggleButtonContainer)
+
+    const toggleButton = document.createElement('div')
     toggleButton.classList.add('accordion-toggle-button')
-    itemTitleContainer.appendChild(toggleButton)
+    toggleButtonContainer.appendChild(toggleButton)
 
     const itemDescription = document.createElement('div')
     itemDescription.classList.add('accordion-item-description')
     container.appendChild(itemDescription)
 
-    toggleButton.addEventListener('click', () => {
+    itemTitleContainer.addEventListener('click', () => {
         itemDescription.classList.toggle('opened')
+        itemTitle.classList.toggle('opened')
+        toggleButton.classList.toggle('opened')
     })
+
+    const divider = document.createElement('div')
+    divider.classList.add('accordion-item-divider')
+    container.appendChild(divider)
 
     itemTitle.innerHTML = title;
     itemDescription.innerHTML = description;

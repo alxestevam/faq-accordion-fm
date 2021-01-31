@@ -27,4 +27,6 @@ const accordionItems = [
 
 const accordion = createAccordion(accordionItems)
 
-document.body.appendChild(accordion)
+const faqCard = document.getElementById('faq-card')
+
+faqCard.appendChild(accordion)
